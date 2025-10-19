@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors */
+  --color-oak-primary: #b89968;
+  --color-iron-primary: #3d3d3d;
+  --color-brass-accent: #b8860b;
+  
+  /* Wood Tint Overlays */
+  --overlay-oak: rgba(184, 153, 104, 0.15);
+  --overlay-walnut: rgba(101, 67, 33, 0.15);
+  --overlay-maple: rgba(222, 184, 135, 0.1);
+  
+  /* Spacing */
+  --nav-height: 80px;
+  --section-padding: 6rem;
+  
+  /* Transitions */
+  --transition-base: 200ms ease;
+  --transition-slow: 400ms ease-out;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply font-sans text-iron-900 bg-oak-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  /* Button Styles */
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-iron-800 text-white hover:bg-iron-900;
+    @apply focus:ring-iron-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-iron-800 text-iron-800;
+    @apply hover:bg-iron-800 hover:text-white;
+    @apply focus:ring-iron-700;
+  }
+  
+  /* Link Styles */
+  .link-animated {
+    @apply relative inline-block;
+  }
+  
+  .link-animated::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-current;
+    @apply transition-all duration-200 ease-in-out;
+  }
+  
+  .link-animated:hover::after {
+    @apply w-full;
+  }
+  
+  /* Card Styles */
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+    @apply transition-shadow duration-200;
+  }
+  
+  .card:hover {
+    @apply shadow-xl;
+  }
+  
+  /* Section Container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Text Gradients */
+  .text-gradient-oak {
+    @apply bg-gradient-to-r from-oak-600 to-oak-400 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  /* Animation Delays */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  /* Parallax */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-oak-100;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-oak-400 rounded-full;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-oak-500;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+

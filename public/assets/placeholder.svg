@@ -1,0 +1,6 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#e8dfd0"/>
+  <path d="M550 350L600 300L650 350L600 400L550 350Z" fill="#b89968" opacity="0.3"/>
+  <text x="600" y="420" font-family="sans-serif" font-size="24" fill="#866440" text-anchor="middle">Image Placeholder</text>
+</svg>
+
