@@ -27,19 +27,19 @@ export const processSteps = [
     id: '1',
     title: 'Discover',
     icon: '/assets/icons/icon-discover.svg',
-    description: 'We discuss your vision, needs, and budget. I'll visit your space to understand the context and possibilities.',
+    description: 'We discuss your vision, needs, and budget. I&apos;ll visit your space to understand the context and possibilities.',
   },
   {
     id: '2',
     title: 'Measure',
     icon: '/assets/icons/icon-measure.svg',
-    description: 'Precise measurements and detailed drawings ensure everything fits perfectly. You'll approve the design before I begin building.',
+    description: 'Precise measurements and detailed drawings ensure everything fits perfectly. You&apos;ll approve the design before I begin building.',
   },
   {
     id: '3',
     title: 'Build',
     icon: '/assets/icons/icon-build.svg',
-    description: 'Expert craftsmanship in my shop. I'll keep you updated on progress and welcome you to visit and see your piece taking shape.',
+    description: 'Expert craftsmanship in my shop. I&apos;ll keep you updated on progress and welcome you to visit and see your piece taking shape.',
   },
   {
     id: '4',
