@@ -9,11 +9,9 @@ interface NavProps {
 
 const menuItems = [
   { label: 'Work', href: '#portfolio' },
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
   { label: 'About', href: '#about' },
+  { label: 'Process', href: '#process' },
   { label: 'Reviews', href: '#testimonials' },
-  { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ];
 
