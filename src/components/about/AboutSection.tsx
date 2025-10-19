@@ -107,14 +107,14 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = '' }) =>
             {/* Bio */}
             <div className="prose prose-lg mb-8">
               <p className="text-iron-700 leading-relaxed mb-4">
-                I'm Josh Catiller, and I've been building custom furniture and cabinetry for over a decade. 
+                I&apos;m Josh Catiller, and I&apos;ve been building custom furniture and cabinetry for over a decade. 
                 What started as a passion for woodworking has become a career dedicated to creating pieces 
                 that homeowners will treasure for generations.
               </p>
               <p className="text-iron-700 leading-relaxed">
                 Every project begins with understanding your vision and your space. I work closely with you 
                 from initial concept through installation, ensuring the final piece exceeds your expectations. 
-                Whether it's a complete kitchen remodel or a custom bookshelf, I approach each project with 
+                Whether it&apos;s a complete kitchen remodel or a custom bookshelf, I approach each project with 
                 the same attention to detail and commitment to quality.
               </p>
             </div>

@@ -10,6 +10,7 @@ interface LightboxProps {
 
 export const Lightbox: React.FC<LightboxProps> = ({ project, onClose, isOpen }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const allImages = [project.heroImage, ...project.galleryImages];
 
   useEffect(() => {
     if (isOpen) {
@@ -29,19 +30,17 @@ export const Lightbox: React.FC<LightboxProps> = ({ project, onClose, isOpen }) 
       if (e.key === 'Escape') {
         onClose();
       } else if (e.key === 'ArrowLeft') {
-        handlePrevious();
+        setCurrentImageIndex((prev) => (prev - 1 + allImages.length) % allImages.length);
       } else if (e.key === 'ArrowRight') {
-        handleNext();
+        setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, currentImageIndex]);
+  }, [isOpen, onClose, allImages.length]);
 
   if (!isOpen) return null;
-
-  const allImages = [project.heroImage, ...project.galleryImages];
 
   const handleNext = () => {
     setCurrentImageIndex((prev) => (prev + 1) % allImages.length);

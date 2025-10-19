@@ -116,7 +116,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
               Request a Quote
             </h2>
             <p className="text-lg text-iron-600 max-w-2xl mx-auto">
-              Tell me about your project and I'll get back to you within one business day.
+              Tell me about your project and I&apos;ll get back to you within one business day.
             </p>
           </div>
 
@@ -178,7 +178,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
                   Request Received!
                 </h3>
                 <p className="text-green-700">
-                  Thank you for reaching out. We'll reply within one business day.
+                  Thank you for reaching out. We&apos;ll reply within one business day.
                 </p>
               </div>
             ) : formState === 'error' ? (

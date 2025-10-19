@@ -13,12 +13,12 @@ export const faqItems: FAQItem[] = [
   {
     id: '2',
     question: 'Do you provide design services?',
-    answer: 'Yes! I work closely with you to design pieces that fit your space and style perfectly. We'll discuss your needs, take precise measurements, and create detailed drawings before any building begins. I can also collaborate with your architect or designer.',
+    answer: 'Yes! I work closely with you to design pieces that fit your space and style perfectly. We&apos;ll discuss your needs, take precise measurements, and create detailed drawings before any building begins. I can also collaborate with your architect or designer.',
   },
   {
     id: '3',
     question: 'What types of wood do you work with?',
-    answer: 'I work with a variety of hardwoods including white oak, walnut, maple, cherry, and hickory. Each wood has unique characteristics, and I'll help you choose the best species for your project based on aesthetics, durability, and budget. I source from sustainable suppliers whenever possible.',
+    answer: 'I work with a variety of hardwoods including white oak, walnut, maple, cherry, and hickory. Each wood has unique characteristics, and I&apos;ll help you choose the best species for your project based on aesthetics, durability, and budget. I source from sustainable suppliers whenever possible.',
   },
 ];
 

@@ -46,7 +46,7 @@ export const testimonials: Testimonial[] = [
     clientImage: '/assets/placeholder.svg',
     rating: 5,
     projectType: 'Dining Table',
-    quote: 'Josh created a stunning live edge table for our dining room. It's truly a work of art that we'll cherish for generations.',
+    quote: 'Josh created a stunning live edge table for our dining room. It&apos;s truly a work of art that we&apos;ll cherish for generations.',
     neighborhood: 'Westside',
     platform: 'Houzz',
   },
