@@ -69,8 +69,8 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
         } ${className}`}
         style={{ top: isScrolled ? '0' : '0' }}
       >
-        <nav className="section-container">
-          <div className="flex items-center justify-between h-20">
+        <nav className="px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
@@ -78,7 +78,7 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
                 alt="Oak & Iron Carpentry"
                 width={180}
                 height={54}
-                className="h-12 w-auto"
+                className="h-8 sm:h-10 lg:h-12 w-auto"
                 priority
               />
             </Link>
@@ -154,7 +154,7 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
 
         {/* Menu Panel */}
         <div
-          className={`absolute top-0 right-0 bottom-0 w-80 max-w-full bg-oak-50 shadow-xl transform transition-transform duration-300 ${
+          className={`absolute top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-oak-50 shadow-xl transform transition-transform duration-300 ${
             isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -166,7 +166,7 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
                 alt="Oak & Iron Carpentry"
                 width={150}
                 height={45}
-                className="h-10 w-auto"
+                className="h-8 sm:h-10 w-auto"
               />
               <button
                 onClick={() => setIsMobileMenuOpen(false)}

@@ -62,17 +62,17 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 section-container py-20 pt-32">
-        <div className="max-w-4xl">
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-16 sm:py-20 pt-24 sm:pt-32">
+        <div className="max-w-4xl mx-auto">
           {/* Headline */}
           <h1
-            className={`font-serif text-white mb-6 transition-all duration-500 ${
+            className={`font-serif text-white mb-4 sm:mb-6 px-2 sm:px-0 transition-all duration-500 ${
               isLoaded
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-5'
             }`}
             style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+              fontSize: 'clamp(2rem, 5vw, 4.5rem)',
               lineHeight: '1.1',
               letterSpacing: '-0.02em',
             }}
@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
 
           {/* Subheadline */}
           <p
-            className={`text-xl md:text-2xl text-oak-100 mb-10 max-w-2xl transition-all duration-500 delay-100 ${
+            className={`text-lg sm:text-xl md:text-2xl text-oak-100 mb-8 sm:mb-10 max-w-2xl px-2 sm:px-0 transition-all duration-500 delay-100 ${
               isLoaded
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-5'
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
 
           {/* CTAs */}
           <div
-            className={`flex flex-wrap gap-4 mb-12 transition-all duration-500 delay-200 ${
+            className={`flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-12 px-2 sm:px-0 transition-all duration-500 delay-200 ${
               isLoaded
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-5'
@@ -102,13 +102,13 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
           >
             <button
               onClick={scrollToContact}
-              className="btn bg-brass-500 hover:bg-brass-600 text-white px-8 py-4 text-lg font-semibold rounded-md shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              className="btn bg-brass-500 hover:bg-brass-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-md shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full sm:w-auto"
             >
               Request a Quote
             </button>
             <button
               onClick={scrollToPortfolio}
-              className="btn bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 text-lg font-semibold rounded-md transition-all"
+              className="btn bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-md transition-all w-full sm:w-auto"
             >
               See Recent Work
             </button>
@@ -116,7 +116,7 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
 
           {/* Trust Badges */}
           <div
-            className={`flex flex-wrap gap-6 md:gap-8 text-oak-100 transition-all duration-500 delay-300 ${
+            className={`flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 md:gap-8 text-oak-100 px-2 sm:px-0 transition-all duration-500 delay-300 ${
               isLoaded
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-5'
