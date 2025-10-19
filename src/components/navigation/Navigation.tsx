@@ -74,7 +74,7 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src={isScrolled ? '/assets/logo/oak-iron-logo.svg' : '/assets/logo/oak-iron-logo-light.svg'}
+                src="/assets/logo/oak-and-iron-logo-main.png"
                 alt="Oak & Iron Carpentry"
                 width={180}
                 height={54}
@@ -162,7 +162,7 @@ export const Navigation: React.FC<NavProps> = ({ className = '' }) => {
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-oak-200">
               <Image
-                src="/assets/logo/oak-iron-logo.svg"
+                src="/assets/logo/oak-and-iron-logo-main.png"
                 alt="Oak & Iron Carpentry"
                 width={150}
                 height={45}

@@ -49,8 +49,8 @@ export const Hero: React.FC<HeroProps> = ({ className = '' }) => {
       >
         <div className="relative w-full h-full">
           <Image
-            src="/assets/placeholder.svg"
-            alt="Workshop background"
+            src="/assets/hero/hero-workshop-v2.png?t=1234567890"
+            alt="Josh's workshop - custom cabinetry and fine woodwork"
             fill
             className="object-cover"
             priority
