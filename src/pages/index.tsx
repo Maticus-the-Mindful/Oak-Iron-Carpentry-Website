@@ -25,7 +25,7 @@ export default function Home() {
           content="Custom cabinetry and fine woodwork, built for your home."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/logo/oak-iron-logo.svg" />
+        <meta property="og:image" content="/assets/logo/oak-and-iron-logo-main.png" />
       </Head>
 
       <div className="min-h-screen">
@@ -40,23 +40,23 @@ export default function Home() {
           {/* Portfolio Gallery */}
           <PortfolioGallery />
 
-          {/* Video Section */}
-          <VideoSection />
-
-          {/* Testimonials */}
-          <TestimonialsCarousel />
-
           {/* About Section */}
           <AboutSection />
 
-          {/* Wood Swatches */}
-          <WoodSwatches />
+          {/* Video Section */}
+          <VideoSection />
 
           {/* Process Timeline */}
           <ProcessTimeline />
 
+          {/* Wood Swatches */}
+          <WoodSwatches />
+
           {/* FAQ */}
           <FAQAccordion />
+
+          {/* Testimonials */}
+          <TestimonialsCarousel />
 
           {/* Contact Form */}
           <ContactForm />
